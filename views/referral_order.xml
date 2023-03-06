@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_referral_order_form" model="ir.actions.act_window">
+        <field name="name">Referrals</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">referral.order</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id ="submenu_referral_orders"
+        name="Referral"
+        parent="menu_referral_orders"
+        action="action_referral_order_form"
+        groups="order_to_invoice.referral_order_manager"
+        sequence ="10"/>
+
+    <record id="referral_order_view_form" model="ir.ui.view">
+        <field name="name">referral.order.view.form</field>
+        <field name="model">referral.order</field>
+        <field name="arch" type="xml">
+            <form>
+            <header>
+                <field name="state" widget="statusbar" status_visible="new,completed"/>
+            </header>
+                <sheet>
+                    <label for ="name" class="oe_edit_only"/>
+                    <h1>
+                        <field name="name" placeholder ="Order 1"/>
+                    </h1>
+                    <group>
+                        <group>
+                            <field name="folio" string="Folio"/>
+                            <field name="date_order" string="Date"/>
+                            <field name="registration" string="Registration"/>
+                        </group>
+                        <group>
+                            <field name="patient" string="Patient"/>
+                            <field name="document_class" string="Class"/>
+                            <field name="doctor" string="Doctor"/>
+                            <field name="code" string="Code"/>
+                            <field name="invoice_id" string="Invoice" attrs="{'invisible' : [('state','==', 'new')]}"/>
+                        </group>
+                    </group>
+                    <group string="Products">
+                        <field name="product_referral_ids" colspan="2" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="product_id"/>
+                                <field name="code"/>
+                                <field name="catalog"/>
+                                <field name="product_observations"/>
+                                <field name="quant"/>
+                            </tree>
+                        </field>
+                        <field name="observations" string="Observations"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree-->
+    <record id="referral_order_tree_view" model="ir.ui.view">
+        <field name="name">referral.order.tree.view</field>
+        <field name="model">referral.order</field>
+        <field name="arch" type="xml">
+        <tree>
+        <header>
+            <button name="create_invoice" string="Create invoice"
+            class="btn-primary" type="object"/>
+        </header>
+            <field name="folio"/>
+            <field name="date_order"/>
+            <field name="registration"/>
+            <field name="patient"/>
+            <field name="state" widget="badge" decoration-success="state == 'completed'" 
+            decoration-info="state == 'new'" optional="show"/>
+        </tree>
+        </field>
+    </record>
+
+    <!-- Search view-->
+    <record id="view_referral_order_search" model="ir.ui.view">
+        <field name="name">referral.order.search</field>
+        <field name="model">referral.order</field>
+        <field name="arch" type="xml">
+            <search string = "Search referral order">
+                <field name="folio"/>
+                <field name="date_order"/>
+                <group expand="0" string = "Group by">
+                    <filter string ="Folio" name="folio" context="{'group_by': 'folio'}"></filter>
+                    <filter string ="Date" name="date_order" context="{'group_by': 'date_order'}"></filter>
+                    <filter string ="State" name="state" context="{'group_by': 'state'}"></filter>
+                </group>
+            </search>
+        </field>
+    </record>
+</odoo>

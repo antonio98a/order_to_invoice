@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    <!-- Inherit view to Invoice-->
+
+    <record id="inherit_account_move_referral_order_view" model="ir.ui.view">
+        <field name="name">inherit.account.move.referral.order.view</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@id='other_tab']//group[@name='sale_info_group']//field[@name='ref']" position="after">
+                <field name="contract"/>
+                <field name="period"/>
+            </xpath>
+            <xpath expr="//field[@name='account_id']" position="before">
+                <field name="orders"/>
+                <field name="mark"/>
+            </xpath>
+        </field>
+    </record>
+    </data>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_referral_orders_principal"
+    name="Referrals"
+    sequence="10"/>
+
+    <menuitem id="menu_referral_orders"
+    name="Referrals"
+    parent="menu_referral_orders_principal"
+    groups="order_to_invoice.referral_order_manager"
+    sequence="10"/>
+
+</odoo>

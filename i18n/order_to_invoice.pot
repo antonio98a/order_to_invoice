@@ -1,0 +1,350 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* order_to_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e-20230201\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-27 19:08+0000\n"
+"PO-Revision-Date: 2023-02-27 19:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:res.groups,name:order_to_invoice.referral_order_manager
+msgid "Administrador/Remisiones"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__catalog
+msgid "Catalog"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__document_class
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+msgid "Class"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__code
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__code
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+msgid "Code"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_account_bank_statement_line__contract
+#: model:ir.model.fields,field_description:order_to_invoice.field_account_move__contract
+#: model:ir.model.fields,field_description:order_to_invoice.field_account_payment__contract
+msgid "Contract"
+msgstr ""
+
+#. module: order_to_invoice
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_tree_view
+msgid "Create invoice"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__create_uid
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__create_date
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__date_order
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.view_referral_order_search
+msgid "Date"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__display_name
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__doctor
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+msgid "Doctor"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields.selection,name:order_to_invoice.selection__referral_order__state__completed
+msgid "Facturada"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__folio
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.view_referral_order_search
+msgid "Folio"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: order_to_invoice
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.view_referral_order_search
+msgid "Group by"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__id
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__id
+msgid "ID"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,help:order_to_invoice.field_referral_order__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,help:order_to_invoice.field_referral_order__message_has_error
+#: model:ir.model.fields,help:order_to_invoice.field_referral_order__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__invoice_id
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+msgid "Invoice"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model,name:order_to_invoice.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model,name:order_to_invoice.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral____last_update
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__write_uid
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__write_date
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_account_move_line__mark
+msgid "Mark"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields.selection,name:order_to_invoice.selection__referral_order__state__new
+msgid "No Facturada"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,help:order_to_invoice.field_referral_order__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,help:order_to_invoice.field_referral_order__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__product_observations
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__observations
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+msgid "Observations"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__order_id
+msgid "Order"
+msgstr ""
+
+#. module: order_to_invoice
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+msgid "Order 1"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__name
+msgid "Order Name"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_account_move_line__orders
+msgid "Orders"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__patient
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+msgid "Patient"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_account_bank_statement_line__period
+#: model:ir.model.fields,field_description:order_to_invoice.field_account_move__period
+#: model:ir.model.fields,field_description:order_to_invoice.field_account_payment__period
+msgid "Period"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__product_id
+msgid "Product"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__product_referral_ids
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+msgid "Products"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_product_referral__quant
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__quant
+msgid "Quantity"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.ui.menu,name:order_to_invoice.submenu_referral_orders
+msgid "Referral"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.actions.act_window,name:order_to_invoice.action_referral_order_form
+#: model:ir.ui.menu,name:order_to_invoice.menu_referral_orders
+#: model:ir.ui.menu,name:order_to_invoice.menu_referral_orders_principal
+msgid "Referrals"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__registration
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.referral_order_view_form
+msgid "Registration"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: order_to_invoice
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.view_referral_order_search
+msgid "Search referral order"
+msgstr ""
+
+#. module: order_to_invoice
+#: model_terms:ir.ui.view,arch_db:order_to_invoice.view_referral_order_search
+msgid "State"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,help:order_to_invoice.field_referral_order__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: order_to_invoice
+#. odoo-python
+#: code:addons/order_to_invoice/models/referral_order.py:0
+#: code:addons/order_to_invoice/models/referral_order.py:0
+#, python-format
+msgid ""
+"You cannot create invoice for remittance orders that have already been "
+"completed"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model,name:order_to_invoice.model_product_referral
+msgid "product.referral"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model,name:order_to_invoice.model_referral_order
+msgid "referral.order"
+msgstr ""
+
+#. module: order_to_invoice
+#: model:ir.model.fields,field_description:order_to_invoice.field_referral_order__state
+msgid "state"
+msgstr ""

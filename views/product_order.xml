@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    <!-- Product Order Form View-->
+
+    <record id="product_referral_view_form" model="ir.ui.view">
+        <field name="name">product.referral.view.form</field>
+        <field name="model">product.referral</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="product_id" string="Folio"/>
+                            <field name="date_order" string="Date"/>
+                            <field name="registration" string="Registration"/>
+                        </group>
+                        <group>
+                            <field name="patient" string="Patient"/>
+                            <field name="document_class" string="Class"/>
+                            <field name="doctor" string="Doctor"/>
+                            <field name="code" string="Code"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    </data>
+    </data>
+</odoo>
